@@ -10,13 +10,18 @@ namespace WCCon
     public class PeopleCollection : IEnumerable
     {
         
-        private ArrayList arPeople = new ArrayList();
+        private Dictionary<string,Person> arPeople = new Dictionary<string,Person>();
 
-        public Person this[int index]
+        public Person this[string name]
         {
-            get { return (Person)arPeople[index]; }
+            get { return (Person)arPeople[name]; }
 
-            set { arPeople.Insert(index, value); }
+            set { arPeople[name]=value; }
+        }
+
+        public void ClearPeople()
+        {
+            arPeople.Clear();
         }
 
         public int Count
@@ -34,20 +39,22 @@ namespace WCCon
     {
         static void Main(string[] args)
         {
-            PeopleCollection myPeople = new PeopleCollection();
+            test1();
+        }
 
-            myPeople[0] = new Person("Homer", 40);
+        private static void test1()
+        {
+            Point a = new Point(10, 34);
+            Point b = new Point(23, 11);
 
-            myPeople[1] = new Person("Wenwen", 18);
+            Point c = a+b;
 
-            myPeople[2] = new Person("Zhengming", 58);
+            Point d = a-b;
 
-            for (int i = 0; i < myPeople.Count; i++)
-            {
-                Console.WriteLine("Person number :{0}", i);
-                Console.WriteLine("Name is : {0} and Age is : {1}", myPeople[i].Name, myPeople[i].Age);
-                
-            }
+            Console.WriteLine("Point c is : {0}", c.ToString());
+            Console.WriteLine("Point d is : {0}", d.ToString());
+
+            Console.ReadLine();
         }
     }
 }

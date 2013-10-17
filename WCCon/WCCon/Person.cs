@@ -17,5 +17,10 @@ namespace WCCon
             Age = age;
             Name = name;
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
