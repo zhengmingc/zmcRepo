@@ -44,8 +44,8 @@ namespace WCCon
 
         private static void test1()
         {
-            Point a = new Point(10, 34);
-            Point b = new Point(23, 11);
+            Point a = new Point(13, 24);
+            Point b = new Point(23, 34);
 
             Point c = a+b;
 
@@ -53,6 +53,18 @@ namespace WCCon
 
             Console.WriteLine("Point c is : {0}", c.ToString());
             Console.WriteLine("Point d is : {0}", d.ToString());
+
+            Console.WriteLine("Point c ++ is :{0}", c++.ToString());
+
+            Console.WriteLine("Point ++c is :{0}", (++c).ToString());
+
+            Console.WriteLine("a == b :{0}", a == b);
+
+            Console.WriteLine("a != b :{0}", a != b);
+
+            Console.WriteLine("a < b :{0}", a < b);
+
+            Console.WriteLine("a > b :{0}", a > b);
 
             Console.ReadLine();
         }
