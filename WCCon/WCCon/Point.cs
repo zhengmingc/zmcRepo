@@ -11,6 +11,10 @@ namespace WCCon
         public int X { get; set; }
         public int Y { get; set; }
 
+
+        public Point()
+        {
+        }
         public Point(int xPos, int yPos)
         {
             X = xPos;
@@ -88,5 +92,9 @@ namespace WCCon
         {
             return (p1.CompareTo(p2) > 0);
         }
+    }
+
+    class DerivedPoint : Point
+    {
     }
 }

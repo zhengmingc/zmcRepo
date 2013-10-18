@@ -1,72 +1,56 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace WCCon
 {
     public class PeopleCollection : IEnumerable
     {
         
-        private Dictionary<string,Person> arPeople = new Dictionary<string,Person>();
+        private readonly Dictionary<string,Person> _arPeople = new Dictionary<string,Person>();
 
         public Person this[string name]
         {
-            get { return (Person)arPeople[name]; }
+            get { return _arPeople[name]; }
 
-            set { arPeople[name]=value; }
+            set { _arPeople[name]=value; }
         }
 
         public void ClearPeople()
         {
-            arPeople.Clear();
+            _arPeople.Clear();
         }
 
         public int Count
         {
-            get { return arPeople.Count; }
+            get { return _arPeople.Count; }
         }
 
         public IEnumerator GetEnumerator()
         {
-           return arPeople.GetEnumerator();
+           return _arPeople.GetEnumerator();
         }
     }
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            test1();
+            Test2();
         }
 
-        private static void test1()
+        private static void Test2()
         {
-            Point a = new Point(13, 24);
-            Point b = new Point(23, 34);
+            Point a;
+            a = new DerivedPoint();
 
-            Point c = a+b;
+            DerivedPoint b = (DerivedPoint)a;
 
-            Point d = a-b;
-
-            Console.WriteLine("Point c is : {0}", c.ToString());
-            Console.WriteLine("Point d is : {0}", d.ToString());
-
-            Console.WriteLine("Point c ++ is :{0}", c++.ToString());
-
-            Console.WriteLine("Point ++c is :{0}", (++c).ToString());
-
-            Console.WriteLine("a == b :{0}", a == b);
-
-            Console.WriteLine("a != b :{0}", a != b);
-
-            Console.WriteLine("a < b :{0}", a < b);
-
-            Console.WriteLine("a > b :{0}", a > b);
-
+            Console.WriteLine("b is :{0}", b);
             Console.ReadLine();
+
+
         }
     }
 }
