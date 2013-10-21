@@ -1,0 +1,5 @@
+C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\bin\Debug\MyExtensionsLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\bin\Debug\MyExtensionsLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.pdb
