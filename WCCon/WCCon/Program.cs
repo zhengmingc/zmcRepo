@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Media;
+using MyExtensionsLibrary;
 
 
 namespace WCCon
@@ -37,8 +40,23 @@ namespace WCCon
     {
         static void Main()
         {
-            Test2();
+            Test4();
         }
+
+
+        static void Test4()
+        {
+            MyCalc mc = new MyCalc();
+
+            Console.WriteLine("11+23 = {0}",mc.Add(11,23));
+            Console.WriteLine("11-23 = {0}",((IBasicMath)mc).Subtract(11,23));
+
+          
+            Console.ReadLine();
+        }
+
+
+
 
         private static void Test2()
         {
@@ -48,8 +66,27 @@ namespace WCCon
             DerivedPoint b = (DerivedPoint)a;
 
             Console.WriteLine("b is :{0}", b);
-            Console.ReadLine();
+           
+        }
 
+        public static void Test3()
+        {
+            int myInt = 12345678;
+            myInt.DisplayDefiningAssembly();
+
+            System.Data.DataSet d = new DataSet();
+            d.DisplayDefiningAssembly();
+
+            System.Media.SoundPlayer sp = new SoundPlayer();
+            sp.DisplayDefiningAssembly();
+
+            Console.WriteLine("Value of myInt : {0}",myInt);
+            Console.WriteLine("Reverse digits of myInt :{0}",myInt.ReverseDigits());
+
+
+            myInt.Foo();
+            myInt.Foo("ints that foo has msg argument");
+            Console.ReadLine();
 
         }
     }
