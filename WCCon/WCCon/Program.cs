@@ -8,42 +8,40 @@ using MyExtensionsLibrary;
 
 namespace WCCon
 {
-    public class PeopleCollection : IEnumerable
-    {
-        
-        private readonly Dictionary<string,Person> _arPeople = new Dictionary<string,Person>();
-
-        public Person this[string name]
-        {
-            get { return _arPeople[name]; }
-
-            set { _arPeople[name]=value; }
-        }
-
-        public void ClearPeople()
-        {
-            _arPeople.Clear();
-        }
-
-        public int Count
-        {
-            get { return _arPeople.Count; }
-        }
-
-        public IEnumerator GetEnumerator()
-        {
-           return _arPeople.GetEnumerator();
-        }
-    }
-
+   
     class Program
     {
         static void Main()
         {
-            Test4();
+            Test5();
         }
 
+        private static void Test5()
+        {
+            var myCar = new
+            {
+                Color = "Bright pink",
+                Make = "BMW",
+                Year = 1981
+            };
 
+            Console.WriteLine("color is :{0}",myCar.Color);
+
+            ReflectOverAnonymousType(myCar);
+
+            Console.ReadLine();
+        }
+
+        private static void ReflectOverAnonymousType(object obj)
+        {
+            Console.WriteLine("obj is an instance of :{0}",obj.GetType().Name);
+
+            Console.WriteLine("Base calss of {0} is {1}", obj.GetType().Name, obj.GetType().BaseType);
+
+            Console.WriteLine("obj.ToString() = {0}",obj.ToString());
+
+            Console.WriteLine("obj.GetHashCode() ={0}",obj.GetHashCode());
+        }
         static void Test4()
         {
             MyCalc mc = new MyCalc();
@@ -51,7 +49,8 @@ namespace WCCon
             Console.WriteLine("11+23 = {0}",mc.Add(11,23));
             Console.WriteLine("11-23 = {0}",((IBasicMath)mc).Subtract(11,23));
 
-          
+            ReflectOverAnonymousType(mc);
+            
             Console.ReadLine();
         }
 
