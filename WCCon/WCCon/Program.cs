@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Data;
 using System.Media;
 using MyExtensionsLibrary;
@@ -13,7 +11,104 @@ namespace WCCon
     {
         static void Main()
         {
-            Test5();
+            Test10();
+        }
+
+        private static void Test10()
+        {
+           Car c1= new Car("SlugBug",100,10);
+           c1.RegisterWithCarEngine(CallMeHere);
+       
+           Console.WriteLine("****Speeding up****");
+            for (int i = 0; i < 6; i++)
+            {
+                c1.Accelerate(20);
+            }
+
+            c1.UnregisterWithCarEngine(CallMeHere);
+
+            for (int i = 0; i < 6; i++)
+            {
+                c1.Accelerate(20);
+            }
+            Console.ReadLine();
+
+        }
+
+
+
+        public static void OnCarEngineEvent(string msg)
+        {
+            Console.WriteLine("\n****Message from car object****");
+            Console.WriteLine("=>{0}",msg);
+            Console.WriteLine("************\n");
+        }
+
+        public static void CallMeHere(string msg)
+        {
+            Console.WriteLine("=>{0}",msg.ToUpper());
+        }
+
+        private static void Test9()
+        {
+            SimpleMath sm = new SimpleMath();
+
+            BinaryOp b = new BinaryOp(SimpleMath.Add);
+
+            DisplayDelegateInfo(b);
+
+            Console.ReadLine();
+        }
+
+
+        private static void Test7()
+        {
+            var purchaseItem = new
+            {
+                TimeBought = DateTime.Now,
+                ItemBought = new
+                {
+                    Color = "Bright pink",
+                    Make = "BMW",
+                    Year = 1981
+                }
+            };
+
+            ReflectOverAnonymousType(purchaseItem);
+
+            Console.ReadLine();
+
+        }
+
+        public static void DisplayDelegateInfo(Delegate delObj)
+        {
+            foreach (Delegate d in delObj.GetInvocationList())
+            {
+              Console.WriteLine("Method Name is :{0}",d.Method);
+              Console.WriteLine("Target is :{0}",d.Target);
+            }
+        }
+
+        private static void Test6()
+        {
+            var firstCar = new
+            {
+                Color = "Bright pink",
+                Make = "BMW",
+                Year = 1981
+            };
+
+            var secondCar = new
+            {
+                Color = "Bright pink",
+                Make = "BMW",
+                Year = 1981
+            };
+
+            Console.WriteLine(firstCar.GetType().Name==secondCar.GetType().Name ? "Same anonymous object" : "Not the same anonyous object!");
+
+            Console.ReadLine();
+
         }
 
         private static void Test5()
