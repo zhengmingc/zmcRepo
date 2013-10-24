@@ -25,20 +25,25 @@ namespace WCCon
             PetName = name;
         }
 
+        public void AccelerateTry(int delta)
+        {
+            if (Exploded != null)
+               Exploded("Sorry, this car is dead");
+        }
         public void Accelerate(int delta)
         {
             if (_carIsDead)
             {
-                if (listOfHandlers != null)
-                    listOfHandlers("Sorry, this car is dead...");
+                if (Exploded != null)
+                    Exploded("Sorry, this car is dead...");
             }
             else
             {
                 CurrentSpeed += delta;
 
-                if (10 == (MaxSpeed - CurrentSpeed)&& listOfHandlers !=null)
+                if (10 == (MaxSpeed - CurrentSpeed)&& AboutToBlow !=null)
                 {
-                    listOfHandlers("Carefull buddy ! Gone slow");
+                    AboutToBlow("Carefull buddy ! Gone slow");
                 }
                 if (CurrentSpeed > MaxSpeed)
                     _carIsDead = true;
@@ -52,20 +57,13 @@ namespace WCCon
 
         public delegate void CarEngineHandler(string msgForCaller);
 
-        private CarEngineHandler listOfHandlers;
+        public event CarEngineHandler Exploded;
+        public event CarEngineHandler AboutToBlow;
 
-        public void RegisterWithCarEngine(CarEngineHandler methodToCall)
-        {
-            listOfHandlers += methodToCall;
-        }
 
-        public void UnregisterWithCarEngine(CarEngineHandler methodToCall)
-        {
-            listOfHandlers -= methodToCall;
-        }
 
     }
 
 
-   
+    public class SportsCar :Car{}
 }

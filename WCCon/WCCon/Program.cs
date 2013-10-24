@@ -11,17 +11,73 @@ namespace WCCon
     {
         public delegate Car ObtainCarDelegate();
 
+        public delegate void MyGenericDelegate<T>(T arg);
+
         static void Main()
         {
-            Test11();
+            Test13();
         }
 
+        private static void Test13()
+        {
+           Car myCar = new Car("BMW",100,10);
+
+            myCar.AboutToBlow += CallWhenExploded;
+            myCar.AboutToBlow += MyCarOnAboutToBlow;
+
+
+            for (int i = 0; i < 6; i++)
+            {
+                myCar.Accelerate(20);
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void MyCarOnAboutToBlow(string msgForCaller)
+        {
+            
+        }
+
+
+        private static void CallWhenExploded(string msg)
+        {
+            Console.WriteLine("Car is going to explode! {0}",msg);
+        }
+
+        private static void CallYouHere(string msg)
+        {
+            Console.WriteLine("Call you here ! {0}",msg);
+        }
+
+        private static void Test12()
+        {
+            MyGenericDelegate<string> stringDel = new MyGenericDelegate<string>(StringArg);
+            stringDel("test1");
+
+            MyGenericDelegate<int>  intDel = new MyGenericDelegate<int>(IntArg);
+
+            IntArg(22);
+
+            Console.ReadLine();
+        }
+
+        private static void StringArg(string arg)
+        {
+            Console.WriteLine("Calling StringArg with {0}",arg);
+        }
+
+        private static void IntArg(int arg)
+        {
+            Console.WriteLine("Calling IntArg with {0}",arg);
+        }
         private static void Test11()
         {
             ObtainCarDelegate targetA = new ObtainCarDelegate(GetBasicCar);
-
+            ObtainCarDelegate targetB = new ObtainCarDelegate(GetSportsCar);
             
-            Console.WriteLine("Obtained a {0}: ",targetA());
+            Console.WriteLine("Obtained a {0} : ",targetA());
+            Console.WriteLine("Obtained b {0} : ",targetB());
 
             Console.ReadLine();
 
@@ -32,28 +88,12 @@ namespace WCCon
             return new Car("Zippy", 100, 55);
         }
 
-        private static void Test10()
+        private static SportsCar GetSportsCar()
         {
-           Car c1= new Car("SlugBug",100,10);
-           c1.RegisterWithCarEngine(CallMeHere);
-       
-           Console.WriteLine("****Speeding up****");
-            for (int i = 0; i < 6; i++)
-            {
-                c1.Accelerate(20);
-            }
-
-            c1.UnregisterWithCarEngine(CallMeHere);
-
-            for (int i = 0; i < 6; i++)
-            {
-                c1.Accelerate(20);
-            }
-            Console.ReadLine();
-
+            return new SportsCar();
         }
 
-
+        
 
         public static void OnCarEngineEvent(string msg)
         {
