@@ -9,9 +9,27 @@ namespace WCCon
    
     class Program
     {
+        public delegate Car ObtainCarDelegate();
+
         static void Main()
         {
-            Test10();
+            Test11();
+        }
+
+        private static void Test11()
+        {
+            ObtainCarDelegate targetA = new ObtainCarDelegate(GetBasicCar);
+
+            
+            Console.WriteLine("Obtained a {0}: ",targetA());
+
+            Console.ReadLine();
+
+        }
+
+        private static Car GetBasicCar()
+        {
+            return new Car("Zippy", 100, 55);
         }
 
         private static void Test10()
