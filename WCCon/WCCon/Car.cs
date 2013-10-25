@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace WCCon
 {
+    public class CarEventArgs : EventArgs
+    {
+        public readonly string msg;
+
+        public CarEventArgs(string message)
+        {
+            msg = message;
+        }
+    }
     public class Car
     {
         public int CurrentSpeed { get; set; }
@@ -28,14 +37,14 @@ namespace WCCon
         public void AccelerateTry(int delta)
         {
             if (Exploded != null)
-               Exploded("Sorry, this car is dead");
+               Exploded(this,new CarEventArgs("Sorry, this car is dead"));
         }
         public void Accelerate(int delta)
         {
             if (_carIsDead)
             {
                 if (Exploded != null)
-                    Exploded("Sorry, this car is dead...");
+                    Exploded(this, new CarEventArgs("Sorry, this car is dead..."));
             }
             else
             {
@@ -43,7 +52,7 @@ namespace WCCon
 
                 if (10 == (MaxSpeed - CurrentSpeed)&& AboutToBlow !=null)
                 {
-                    AboutToBlow("Carefull buddy ! Gone slow");
+                    AboutToBlow(this, new CarEventArgs("Carefull buddy ! Gone slow"));
                 }
                 if (CurrentSpeed > MaxSpeed)
                     _carIsDead = true;
@@ -55,12 +64,8 @@ namespace WCCon
 
         }
 
-        public delegate void CarEngineHandler(string msgForCaller);
-
-        public event CarEngineHandler Exploded;
-        public event CarEngineHandler AboutToBlow;
-
-
+        public event EventHandler<CarEventArgs> Exploded;
+        public event EventHandler<CarEventArgs> AboutToBlow;
 
     }
 

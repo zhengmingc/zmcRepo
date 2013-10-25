@@ -22,9 +22,16 @@ namespace WCCon
         {
            Car myCar = new Car("BMW",100,10);
 
-            myCar.AboutToBlow += CallWhenExploded;
-            myCar.AboutToBlow += MyCarOnAboutToBlow;
+            myCar.AboutToBlow += delegate(object sender, CarEventArgs e)
+            {
+                Console.WriteLine("Car is going to explode! {0}", e.msg);
+        
+            };
 
+            myCar.AboutToBlow += delegate(object sender, CarEventArgs e)
+            {
+                Console.WriteLine("Call you here ! {0}", e.msg);
+            };
 
             for (int i = 0; i < 6; i++)
             {
@@ -34,21 +41,6 @@ namespace WCCon
             Console.ReadLine();
         }
 
-        private static void MyCarOnAboutToBlow(string msgForCaller)
-        {
-            
-        }
-
-
-        private static void CallWhenExploded(string msg)
-        {
-            Console.WriteLine("Car is going to explode! {0}",msg);
-        }
-
-        private static void CallYouHere(string msg)
-        {
-            Console.WriteLine("Call you here ! {0}",msg);
-        }
 
         private static void Test12()
         {
