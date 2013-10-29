@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Media;
+using System.Security.Cryptography;
 using MyExtensionsLibrary;
 
 
@@ -16,52 +18,34 @@ namespace WCCon
 
         static void Main()
         {
-            Test16();
+            Test17();
+        }
+
+        private static void Test17()
+        {
+            throw new NotImplementedException();
         }
 
         private static void Test16()
         {
-            Car myCar = new Car("BMW",20,100);
+            string[] currentVideoGames = {"Morrowwind", "Uncharted 2", "System Shock 2"};
 
-            myCar.AboutToBlow += (sender, e) => Console.WriteLine(e.msg);
+            IEnumerable<string> subset = from currentVideoGame in currentVideoGames
+                where currentVideoGame.Contains(" ")
+                orderby currentVideoGame
+                select currentVideoGame;
 
-            myCar.Exploded += (sender, e) => Console.WriteLine(e.msg);
-
-            for (int i = 0; i < 6; i++)
+           
+            foreach (var s in subset)
             {
-                myCar.Accelerate(20);
+                Console.WriteLine(s);
             }
+
+            Console.WriteLine("type is {0}",subset.GetType().Name);
+            Console.WriteLine("assmebly is {0}",subset.GetType().Assembly.GetName().Name);
         }
 
-        private static void Test15()
-        {
-            SimpleMath m = new SimpleMath();
-            m.SetMathHandler((msg, result) => Console.WriteLine("Message : {0}, Result :{1}", msg, result));
-
-            m.Add(12,24);
       
-        }
-
-        private static void Test14()
-        {
-            List<int> list = new List<int>();
-
-            list.AddRange(new int[]{20,1,4,5});
-
-            List<int> evenNumbers = list.FindAll(i =>
-            {
-                Console.WriteLine("Current value is {0}",i);
-                bool result =(i%2) == 0;
-                return result;
-            });
-
-            foreach (var evenNumber in evenNumbers)
-            {
-                Console.WriteLine("number is {0}",evenNumber);
-            }
-            
-
-        }
 
 
     }
