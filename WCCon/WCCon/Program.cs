@@ -20,20 +20,110 @@ namespace WCCon
 
         static void Main()
         {
-            Test18();
-        }
-
-        private static void Test18()
-        {
-           ArrayList myStuff = new ArrayList();
-           myStuff.AddRange(new object[]{23,49,true,"wenwen"});
-            var newStuff = myStuff.OfType<int>();
-            foreach (var i in newStuff)
-            {
-                Console.WriteLine("{0}",i);
-            }
+            Test21();
 
             Console.ReadLine();
+        }
+
+        private static void Test21()
+        {
+            string[] currentVideoGames =
+            {
+                "Morrowwind",
+                "Uncharted 2",
+                "Fallout 3",
+                "Daxter",
+                "System Shock 2"
+            };
+
+            var subset = currentVideoGames.Where(game => game.Contains(" "))
+                .OrderBy(game => game).Select(game => game);
+
+            foreach (var p in subset)
+            {
+                Console.WriteLine(p);
+            }
+        }
+
+        private static void Test20()
+        {
+            double[] temps = {2.0, -21.3, 8, -4, 0, 8.2};
+
+            Console.WriteLine("Max temp :{0}", (from t in temps select t).Sum());
+        }
+
+        private static void Test19()
+        {
+          List<string> myCars = new List<string>{"Yugo","Aztec","BMW"};
+          List<string> yourCars = new List<string>{"BMW","Saab","Aztec"};
+        
+          var carDiff = (from myCar in myCars 
+                        select myCar).Concat(from yourCar in yourCars select yourCar);
+           
+          foreach (var c in carDiff)
+            {
+                Console.WriteLine("{0}",c);
+            }
+           
+        }
+
+
+
+        #region test method
+        private static void Test18()
+        {
+            ProductInfo[] itemsInStrocks = new[]
+            {
+                new ProductInfo
+                {
+                    Name = "Mac's Coffee",
+                    Description = "Coffee with TEETH",
+                    NumberInStock = 24
+                },
+                new ProductInfo
+                {
+                    Name = "Milk Maid Milk",
+                    Description = "Milk cow's love",
+                    NumberInStock = 100
+                },
+
+                new ProductInfo
+                {
+                    Name = "Pure Silk Tofu",
+                    Description = "Bland as Possible",
+                    NumberInStock = 120
+                },
+
+                new ProductInfo
+                {
+                    Name = "Cruchy Pops",
+                    Description = "Cheezy,peppery goodness",
+                    NumberInStock = 2
+                },
+            };
+
+
+          
+
+           
+            
+            foreach (var productInfo in GetArrayPro(itemsInStrocks))
+            {
+                Console.WriteLine(productInfo.ToString());
+            }
+
+            
+
+        }
+
+        static Array GetArrayPro(IEnumerable<ProductInfo> list)
+        {
+            ///////
+            var allProducts = from itemsInStrock in list
+                              orderby itemsInStrock.NumberInStock  
+                              select itemsInStrock;
+
+            return allProducts.ToArray();
         }
 
         private static void Test17()
@@ -78,7 +168,9 @@ namespace WCCon
             Console.WriteLine("assmebly is {0}",subset.GetType().Assembly.GetName().Name);
         }
 
-      
+
+
+        #endregion
 
 
     }
