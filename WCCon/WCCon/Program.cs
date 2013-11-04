@@ -7,6 +7,7 @@ using System.Media;
 using System.Security.Cryptography;
 using System.Xml.Schema;
 using MyExtensionsLibrary;
+using MyShapes;
 
 
 namespace WCCon
@@ -20,9 +21,18 @@ namespace WCCon
 
         static void Main()
         {
-            Test21();
+            Test22();
+
+            
 
             Console.ReadLine();
+        }
+
+        private static void Test22()
+        {
+            MyShapes.Circle c = new Circle();
+            MyShapes.Hexagon h = new Hexagon();
+            MyShapes.Square s = new MyShapes.Square();
         }
 
         private static void Test21()
@@ -36,13 +46,29 @@ namespace WCCon
                 "System Shock 2"
             };
 
-            var subset = currentVideoGames.Where(game => game.Contains(" "))
-                .OrderBy(game => game).Select(game => game);
+            Func<string, bool> searhFilter =
+                new Func<string, bool>(Filter);
+
+            Func<string, string> itemToProcess = new Func<string, string>(ProcessItems);
+
+
+            var subset = currentVideoGames.Where(searhFilter)
+                .OrderBy(itemToProcess).Select(itemToProcess);
 
             foreach (var p in subset)
             {
                 Console.WriteLine(p);
             }
+        }
+
+        private static string ProcessItems(string arg)
+        {
+            return arg;
+        }
+
+        private static bool Filter(string arg)
+        {
+           return arg.Contains(" ");
         }
 
         private static void Test20()
@@ -173,5 +199,7 @@ namespace WCCon
         #endregion
 
 
+
+        public static Func<string, string> itemToProcess { get; set; }
     }
 }

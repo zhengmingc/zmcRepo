@@ -1,0 +1,4 @@
+C:\Users\Wenwen\zmcRepo\WCCon\MyShapes\bin\Debug\MyShapes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\MyShapes\bin\Debug\MyShapes.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\MyShapes\obj\Debug\MyShapes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\MyShapes\obj\Debug\MyShapes.pdb
