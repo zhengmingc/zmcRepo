@@ -1,0 +1,8 @@
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarClient.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarClient.exe
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarClient.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.exe
+C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.pdb

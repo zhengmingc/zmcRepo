@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCCon", "WCCon\WCCon.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyExtensionsLibrary", "MyExtensionsLibrary\MyExtensionsLibrary.csproj", "{1E939F11-42CD-4661-843A-3C52D32C73A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "CarLibrary\CarLibrary.csproj", "{3D7ADAAD-14AB-4CA1-AA5D-2E9F2ACDB588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarClient", "CarClient\CarClient.csproj", "{5CDC7914-1000-4881-91A9-E8005A4299BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{1E939F11-42CD-4661-843A-3C52D32C73A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E939F11-42CD-4661-843A-3C52D32C73A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E939F11-42CD-4661-843A-3C52D32C73A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7ADAAD-14AB-4CA1-AA5D-2E9F2ACDB588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7ADAAD-14AB-4CA1-AA5D-2E9F2ACDB588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7ADAAD-14AB-4CA1-AA5D-2E9F2ACDB588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7ADAAD-14AB-4CA1-AA5D-2E9F2ACDB588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDC7914-1000-4881-91A9-E8005A4299BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDC7914-1000-4881-91A9-E8005A4299BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDC7914-1000-4881-91A9-E8005A4299BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDC7914-1000-4881-91A9-E8005A4299BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
