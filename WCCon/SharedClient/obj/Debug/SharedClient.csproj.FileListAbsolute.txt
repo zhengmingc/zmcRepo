@@ -1,0 +1,6 @@
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\bin\Debug\SharedClient.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\bin\Debug\SharedClient.exe
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\bin\Debug\SharedClient.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\obj\Debug\SharedClient.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\obj\Debug\SharedClient.exe
+C:\Users\Wenwen\zmcRepo\WCCon\SharedClient\obj\Debug\SharedClient.pdb
