@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,21 @@ namespace CarClient
 
             MiniCar mini = new MiniCar("minicar",1200,12);
             mini.TurboBoost();
-            Console.ReadLine();
+           
 
+            AppSettingsReader ar = new AppSettingsReader();
+            int numbOfTimes = (int)ar.GetValue("RepeatCount", typeof(int));
+
+            string textColor = (string)ar.GetValue("TextColor", typeof (string));
+
+            Console.ForegroundColor = (ConsoleColor) Enum.Parse(typeof (ConsoleColor), textColor);
+
+            for (int i = 0; i < numbOfTimes; i++)
+            {
+                Console.WriteLine("Wenwen");
+            }
+
+            Console.ReadLine();
         }
     }
 }
