@@ -15,6 +15,12 @@ namespace WCCon
             msg = message;
         }
     }
+
+    public enum EnginState
+    {
+        EngineAlive,
+        EngineDead
+    }
     public class Car
     {
         public int CurrentSpeed { get; set; }
@@ -22,6 +28,8 @@ namespace WCCon
         public string PetName { get; set; }
 
         private bool _carIsDead;
+
+        public EnginState State;
 
         public Car()
         {
