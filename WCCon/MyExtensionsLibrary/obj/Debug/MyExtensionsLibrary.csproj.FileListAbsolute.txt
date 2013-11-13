@@ -2,4 +2,3 @@ C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\bin\Debug\MyExtensionsLibrary.
 C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\bin\Debug\MyExtensionsLibrary.pdb
 C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.dll
 C:\Users\Wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.pdb
-C:\Users\wenwen\zmcRepo\WCCon\MyExtensionsLibrary\obj\Debug\MyExtensionsLibrary.csprojResolveAssemblyReference.cache
