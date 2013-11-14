@@ -12,6 +12,33 @@ namespace MyTypeViewer
     {
         static void Main(string[] args)
         {
+            string typeName = "";
+
+            do
+            { 
+                Console.WriteLine("\nEnter a type name to evaluate");
+                Console.WriteLine("or enter Q to quit");
+
+                typeName = Console.ReadLine();
+
+                if (typeName.ToUpper() == "Q")
+                {
+                    break;
+                }
+
+                try
+                {
+
+                }
+                catch (Exception)
+                {
+                    {
+                        Type t = Type.GetType(typeName);
+                    }
+                    throw;
+                }
+
+            } while (true);
         }
 
         static void ListMethods(Type t)
