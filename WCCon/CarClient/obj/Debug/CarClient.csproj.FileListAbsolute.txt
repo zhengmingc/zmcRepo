@@ -4,5 +4,3 @@ C:\Users\Wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarClient.pdb
 C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.csprojResolveAssemblyReference.cache
 C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.exe
 C:\Users\Wenwen\zmcRepo\WCCon\CarClient\obj\Debug\CarClient.pdb
-C:\Users\wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarLibrary.dll
-C:\Users\wenwen\zmcRepo\WCCon\CarClient\bin\Debug\CarLibrary.pdb

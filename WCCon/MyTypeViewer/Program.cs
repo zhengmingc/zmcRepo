@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using System.Reflection;
+
 
 namespace MyTypeViewer
 {
@@ -28,14 +28,17 @@ namespace MyTypeViewer
 
                 try
                 {
-
+                    Type t = Type.GetType(typeName);
+                    Console.WriteLine("");
+                    ListVariousStats(t);
+                    ListFields(t);
+                    ListProperties(t);
+                    ListMethods(t);
+                    ListInterfaces(t);
                 }
                 catch (Exception)
                 {
-                    {
-                        Type t = Type.GetType(typeName);
-                    }
-                    throw;
+                    Console.WriteLine("Sorry, cannot find the type");
                 }
 
             } while (true);
@@ -47,12 +50,22 @@ namespace MyTypeViewer
 
 
 
-            var names = from n in t.GetMethods()
-                select n.Name;
+            var mis = from n in t.GetMethods()
+                select n;
             
-            foreach (var name in names)
+            foreach (var mi in mis)
             {
-                Console.WriteLine("->{0}",name);
+                string retVal = mi.ReturnType.FullName;
+                string paramInfo = "(";
+
+                foreach (var pi in mi.GetParameters())
+                {
+                    paramInfo += string.Format("{0} {1}", pi.ParameterType, pi.Name);
+                }
+
+                paramInfo += ")";
+
+                Console.WriteLine("->{0} {1} {2}",retVal,mi.Name,paramInfo);
             }
             Console.WriteLine();
         }

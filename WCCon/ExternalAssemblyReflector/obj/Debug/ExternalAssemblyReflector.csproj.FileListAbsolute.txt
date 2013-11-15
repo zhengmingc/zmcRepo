@@ -1,0 +1,5 @@
+C:\Users\Wenwen\zmcRepo\WCCon\ExternalAssemblyReflector\bin\Debug\ExternalAssemblyReflector.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\ExternalAssemblyReflector\bin\Debug\ExternalAssemblyReflector.exe
+C:\Users\Wenwen\zmcRepo\WCCon\ExternalAssemblyReflector\bin\Debug\ExternalAssemblyReflector.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\ExternalAssemblyReflector\obj\Debug\ExternalAssemblyReflector.exe
+C:\Users\Wenwen\zmcRepo\WCCon\ExternalAssemblyReflector\obj\Debug\ExternalAssemblyReflector.pdb
