@@ -12,29 +12,9 @@ namespace ExternalAssemblyReflector
         static void Main(string[] args)
         {
             string asmName = "";
-            Assembly asm = null;
-
-            do
-            {
-              Console.WriteLine("Type in your assembly:");
-                asmName = Console.ReadLine();
-
-                if (asmName.ToUpper() == "Q")
-                {
-                    break;
-                }
-
-                try
-                {
-                    asm = Assembly.LoadFrom(asmName);
-                    DisplayTypesInAsm(asm);
-                }
-
-                catch
-                {
-                    Console.WriteLine("Sorry, can't find assembly.");
-                }
-            } while (true);
+            asmName ="System.Windows.Forms,"+
+                "Version=4.0.0.0"+
+                "PublicKeyToken=";
         }
 
 

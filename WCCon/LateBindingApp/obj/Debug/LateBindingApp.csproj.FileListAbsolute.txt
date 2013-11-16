@@ -1,0 +1,6 @@
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\bin\Debug\LateBindingApp.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\bin\Debug\LateBindingApp.exe
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\bin\Debug\LateBindingApp.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\obj\Debug\LateBindingApp.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\obj\Debug\LateBindingApp.exe
+C:\Users\Wenwen\zmcRepo\WCCon\LateBindingApp\obj\Debug\LateBindingApp.pdb
