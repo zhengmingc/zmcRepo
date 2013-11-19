@@ -31,9 +31,7 @@ namespace WCCon
 
         private static void Test22()
         {
-            //Type t = typeof(CarLibrary.Car);
-            Type t = Type.GetType("WCCon.Car+EnginState", false, true);
-            Console.WriteLine(t);
+            HorseAndBuggy testHorseAndBuggy = new HorseAndBuggy();
         }
 
   }

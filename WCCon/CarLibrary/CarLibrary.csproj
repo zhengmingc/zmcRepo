@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="DerivedCar.cs" />
+    <Compile Include="MotorCycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

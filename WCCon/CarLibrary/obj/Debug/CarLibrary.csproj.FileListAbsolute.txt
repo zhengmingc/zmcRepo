@@ -2,3 +2,4 @@ C:\Users\Wenwen\zmcRepo\WCCon\CarLibrary\bin\Debug\CarLibrary.dll
 C:\Users\Wenwen\zmcRepo\WCCon\CarLibrary\bin\Debug\CarLibrary.pdb
 C:\Users\Wenwen\zmcRepo\WCCon\CarLibrary\obj\Debug\CarLibrary.dll
 C:\Users\Wenwen\zmcRepo\WCCon\CarLibrary\obj\Debug\CarLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CarLibrary\obj\Debug\CarLibrary.csprojResolveAssemblyReference.cache
