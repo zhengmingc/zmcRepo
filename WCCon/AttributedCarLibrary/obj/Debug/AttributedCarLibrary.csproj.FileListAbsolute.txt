@@ -1,0 +1,5 @@
+C:\Users\Wenwen\zmcRepo\WCCon\AttributedCarLibrary\bin\Debug\AttributedCarLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\AttributedCarLibrary\bin\Debug\AttributedCarLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\AttributedCarLibrary\obj\Debug\AttributedCarLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\AttributedCarLibrary\obj\Debug\AttributedCarLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\AttributedCarLibrary\obj\Debug\AttributedCarLibrary.csprojResolveAssemblyReference.cache

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAssemblyReflector",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LateBindingApp", "LateBindingApp\LateBindingApp.csproj", "{A0921F98-7332-43AC-A7CD-5E7E3A54369A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributedCarLibrary", "AttributedCarLibrary\AttributedCarLibrary.csproj", "{E33B37F6-60CA-4186-90B3-809D5E564707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{A0921F98-7332-43AC-A7CD-5E7E3A54369A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0921F98-7332-43AC-A7CD-5E7E3A54369A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0921F98-7332-43AC-A7CD-5E7E3A54369A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33B37F6-60CA-4186-90B3-809D5E564707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33B37F6-60CA-4186-90B3-809D5E564707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33B37F6-60CA-4186-90B3-809D5E564707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33B37F6-60CA-4186-90B3-809D5E564707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
