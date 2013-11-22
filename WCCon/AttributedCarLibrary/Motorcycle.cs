@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+[assembly:CLSCompliant(true)]
 namespace AttributedCarLibrary
 {   [Serializable]
     [VehicleDescription(Description = "My rocking Harley")]
@@ -17,6 +18,6 @@ namespace AttributedCarLibrary
     [VehicleDescription("It is winnebago")]
     public class Winnebago
     {
-
+        
     }
 }

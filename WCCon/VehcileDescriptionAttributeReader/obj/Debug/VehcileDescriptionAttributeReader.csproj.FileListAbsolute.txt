@@ -1,0 +1,8 @@
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\bin\Debug\VehcileDescriptionAttributeReader.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\bin\Debug\VehcileDescriptionAttributeReader.exe
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\bin\Debug\VehcileDescriptionAttributeReader.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\bin\Debug\AttributedCarLibrary.dll
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\bin\Debug\AttributedCarLibrary.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\obj\Debug\VehcileDescriptionAttributeReader.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\obj\Debug\VehcileDescriptionAttributeReader.exe
+C:\Users\Wenwen\zmcRepo\WCCon\VehcileDescriptionAttributeReader\obj\Debug\VehcileDescriptionAttributeReader.pdb
