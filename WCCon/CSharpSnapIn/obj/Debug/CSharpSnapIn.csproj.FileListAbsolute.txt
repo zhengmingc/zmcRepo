@@ -1,0 +1,7 @@
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\bin\Debug\CSharpSnapIn.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\bin\Debug\CSharpSnapIn.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\bin\Debug\CommonSnappableTypes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\bin\Debug\CommonSnappableTypes.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\obj\Debug\CSharpSnapIn.csprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\obj\Debug\CSharpSnapIn.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CSharpSnapIn\obj\Debug\CSharpSnapIn.pdb

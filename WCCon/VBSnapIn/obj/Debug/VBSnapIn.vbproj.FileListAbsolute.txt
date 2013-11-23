@@ -1,0 +1,11 @@
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\bin\Debug\VBSnapIn.dll
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\bin\Debug\VBSnapIn.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\bin\Debug\VBSnapIn.xml
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\bin\Debug\CommonSnappableTypes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\bin\Debug\CommonSnappableTypes.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.vbprojResolveAssemblyReference.cache
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.Resources.resources
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.vbproj.GenerateResource.Cache
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.dll
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.xml
+C:\Users\Wenwen\zmcRepo\WCCon\VBSnapIn\obj\Debug\VBSnapIn.pdb

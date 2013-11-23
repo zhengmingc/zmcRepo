@@ -1,8 +1,0 @@
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\bin\Debug\WCCon.exe
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\bin\Debug\WCCon.pdb
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\obj\Debug\WCCon.csprojResolveAssemblyReference.cache
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\bin\Debug\WCCon.exe.config
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\bin\Debug\MyExtensionsLibrary.dll
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\bin\Debug\MyExtensionsLibrary.pdb
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\obj\Debug\WCCon.exe
-C:\Users\Wenwen\zmcRepo\WCCon\WCCon\obj\Debug\WCCon.pdb

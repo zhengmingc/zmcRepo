@@ -1,0 +1,4 @@
+C:\Users\Wenwen\zmcRepo\WCCon\CommonSnappableTypes\bin\Debug\CommonSnappableTypes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CommonSnappableTypes\bin\Debug\CommonSnappableTypes.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\CommonSnappableTypes\obj\Debug\CommonSnappableTypes.dll
+C:\Users\Wenwen\zmcRepo\WCCon\CommonSnappableTypes\obj\Debug\CommonSnappableTypes.pdb

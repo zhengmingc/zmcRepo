@@ -3,4 +3,3 @@ C:\Users\Wenwen\zmcRepo\WCCon\MyTypeViewer\bin\Debug\MyTypeViewer.exe
 C:\Users\Wenwen\zmcRepo\WCCon\MyTypeViewer\bin\Debug\MyTypeViewer.pdb
 C:\Users\Wenwen\zmcRepo\WCCon\MyTypeViewer\obj\Debug\MyTypeViewer.exe
 C:\Users\Wenwen\zmcRepo\WCCon\MyTypeViewer\obj\Debug\MyTypeViewer.pdb
-C:\Users\Wenwen\zmcRepo\WCCon\MyTypeViewer\obj\Debug\MyTypeViewer.csprojResolveAssemblyReference.cache
