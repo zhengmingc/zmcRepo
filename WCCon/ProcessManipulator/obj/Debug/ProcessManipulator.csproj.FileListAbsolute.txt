@@ -1,0 +1,5 @@
+C:\Users\Wenwen\zmcRepo\WCCon\ProcessManipulator\bin\Debug\ProcessManipulator.exe.config
+C:\Users\Wenwen\zmcRepo\WCCon\ProcessManipulator\bin\Debug\ProcessManipulator.exe
+C:\Users\Wenwen\zmcRepo\WCCon\ProcessManipulator\bin\Debug\ProcessManipulator.pdb
+C:\Users\Wenwen\zmcRepo\WCCon\ProcessManipulator\obj\Debug\ProcessManipulator.exe
+C:\Users\Wenwen\zmcRepo\WCCon\ProcessManipulator\obj\Debug\ProcessManipulator.pdb
