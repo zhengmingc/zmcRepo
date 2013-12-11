@@ -1,0 +1,6 @@
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\bin\Debug\DefaultAppDomainApp.exe.config
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\bin\Debug\DefaultAppDomainApp.exe
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\bin\Debug\DefaultAppDomainApp.pdb
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\obj\Debug\DefaultAppDomainApp.csprojResolveAssemblyReference.cache
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\obj\Debug\DefaultAppDomainApp.exe
+C:\Users\wenwen\zmcRepo\WCCon\DefaultAppDomainApp\obj\Debug\DefaultAppDomainApp.pdb
