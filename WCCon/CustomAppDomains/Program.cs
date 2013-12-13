@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,12 +19,22 @@ namespace CustomAppDomains
 
         private static void MakeNewAppDomain()
         {
-            throw new NotImplementedException();
+            AppDomain newAD = AppDomain.CreateDomain("SecondAppDomain");
+            ListAllAssembliesInAppDomain(newAD);
         }
 
-        private static void ListAllAssembliesInAppDomain(AppDomain defaultAD)
+        private static void ListAllAssembliesInAppDomain(AppDomain ad)
         {
-            throw new NotImplementedException();
+            var loadedAssemblies = from a in ad.GetAssemblies()
+                orderby a.GetName().Name
+                select a;
+
+            Console.WriteLine("** here are the assemblies loaded in {0} \n", ad.FriendlyName);
+
+            foreach (var a in loadedAssemblies)
+            {
+                
+            }
         }
     }
 }
