@@ -33,7 +33,8 @@ namespace CustomAppDomains
 
             foreach (var a in loadedAssemblies)
             {
-                
+                Console.WriteLine(" -> Name :{0}",a.GetName().Name);
+                Console.WriteLine(" -> Version : {0} \n");
             }
         }
     }
