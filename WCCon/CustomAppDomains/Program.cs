@@ -51,9 +51,14 @@ namespace CustomAppDomains
 
             foreach (var a in loadedAssemblies)
             {
+<<<<<<< HEAD
                 Console.WriteLine("Name ==>> {0}", a.GetName().Name);
                 Console.WriteLine("Version ==>> {0}", a.GetName().Version);
                 
+=======
+                Console.WriteLine(" -> Name :{0}",a.GetName().Name);
+                Console.WriteLine(" -> Version : {0} \n");
+>>>>>>> f80c41bb1a9b763eba5eb0a3e7d9372a58f4156b
             }
         }
     }

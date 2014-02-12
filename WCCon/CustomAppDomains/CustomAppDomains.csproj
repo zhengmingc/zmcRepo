@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{405D3AEA-605E-48A6-899A-A0F88A7F54B6}</ProjectGuid>
+=======
+    <ProjectGuid>{73224A2C-6C87-4C65-BAE4-722769E68117}</ProjectGuid>
+>>>>>>> f80c41bb1a9b763eba5eb0a3e7d9372a58f4156b
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CustomAppDomains</RootNamespace>
