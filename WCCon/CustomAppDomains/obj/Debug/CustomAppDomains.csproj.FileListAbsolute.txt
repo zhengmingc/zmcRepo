@@ -1,1 +1,6 @@
 C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\bin\Debug\CustomAppDomains.exe.config
+C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\bin\Debug\CustomAppDomains.exe
+C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\bin\Debug\CustomAppDomains.pdb
+C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\obj\Debug\CustomAppDomains.csprojResolveAssemblyReference.cache
+C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\obj\Debug\CustomAppDomains.exe
+C:\Users\wenwen\zmcRepo\WCCon\CustomAppDomains\obj\Debug\CustomAppDomains.pdb
